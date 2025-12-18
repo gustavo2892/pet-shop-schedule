@@ -19,11 +19,12 @@ import {
 } from '@/components/ui/form';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
+import { MaskedInput } from '@/components/ui/masked-input';
 import z from 'zod';
 
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Dog, User } from 'lucide-react';
+import { Dog, Phone, User } from 'lucide-react';
 
 const appointmentFormSchema = z.object({
   tutorName: z.string().min(3, 'O nome do tutor é obrigatório'),
@@ -111,6 +112,33 @@ export const AppointmentForm = () => {
                       />
                       <Input
                         placeholder="Nome do pet"
+                        className="pl-10"
+                        {...field}
+                      />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-label-medium-size text-content-primary">
+                    Telefone
+                  </FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <Phone
+                        className="absolute left-3 top-1/2 -translate-y-1/2 transform text-content-brand"
+                        size={20}
+                      />
+                      <MaskedInput
+                        placeholder="(99) 99999-9999"
+                        mask="(00) 00000-0000"
                         className="pl-10"
                         {...field}
                       />
