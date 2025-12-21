@@ -78,11 +78,10 @@ export const DatePicker = () => {
           >
             <div className="flex items-center gap-2">
               <CalendarIcon className="h-4 w-4 text-content-brand" />
-              {date ? (
-                format(date, 'dd/MM/yyyy')
-              ) : (
-                <span className="text-content-primary">Selecione uma data</span>
-              )}
+
+              <span className="text-content-primary">
+                {date ? format(date, 'dd/MM/yyyy') : 'Selecione uma data'}
+              </span>
             </div>
             <ChevronDown className="h-4 w-4 opacity-50 text-content-primary" />
           </Button>

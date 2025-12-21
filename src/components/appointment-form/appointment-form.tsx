@@ -270,7 +270,7 @@ export const AppointmentForm = ({
                           <Button
                             variant="outline"
                             className={cn(
-                              'w-full justify-between text-left font-normal bg-background-tertiary border-border-primary text-content-primary hover:bg-background-tertiary hover:border-border-secondary hover:text-content-primary focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:ring-border-brand focus:border-border-brand focus-visible:border-border-brand',
+                              'w-full justify-between text-left font-normal bg-background-tertiary border-border-primary text-content-primary hover:bg-background-tertiary hover:border-border-secondary hover:text-content-primary focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:ring-border-brand  focus-visible:border-border-brand focus:text-content-primary',
                               !field.value && 'text-content-secondary'
                             )}
                           >
@@ -279,13 +279,11 @@ export const AppointmentForm = ({
                                 className=" text-content-brand"
                                 size={20}
                               />
-                              {field.value ? (
-                                format(field.value, 'dd/MM/yyyy')
-                              ) : (
-                                <span className="text-content-primary">
-                                  Selecione uma data
-                                </span>
-                              )}
+                              <span className="text-content-primary">
+                                {field.value
+                                  ? format(field.value, 'dd/MM/yyyy')
+                                  : 'Selecione uma data'}
+                              </span>
                             </div>
                             <ChevronDownIcon className="opacity-50 h-4 w-4 text-content-primary" />
                           </Button>
