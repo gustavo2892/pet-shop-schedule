@@ -91,7 +91,7 @@ const AlertDialogDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AlertDialogPrimitive.Description
     ref={ref}
-    className={cn('text-paragraph-medium text-content-secondary', className)}
+    className={cn('text-paragraph-medium text-content-primary', className)}
     {...props}
   />
 ));
@@ -121,8 +121,8 @@ const AlertDialogCancel = React.forwardRef<
   <AlertDialogPrimitive.Cancel
     ref={ref}
     className={cn(
-      buttonVariants({ variant: 'outline' }),
-      'text-label-medium h-10 px-6 rounded-lg mt-2 sm:mt-0',
+      buttonVariants({ variant: 'default' }),
+      'text-label-medium h-10 px-6 rounded-lg mt-2 sm:mt-0 text-content-primary',
       className
     )}
     {...props}

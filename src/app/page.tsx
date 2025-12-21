@@ -35,7 +35,7 @@ export default async function Home({
           <h1 className="text-title-size text-content-primary mb-2">
             Sua Agenda
           </h1>
-          <p className="text-paragraph-medium-size text-content-secondary">
+          <p className="text-paragraph-medium-size text-content-primary">
             Aqui você pode ver todos os clientes e serviços agendados para hoje.
           </p>
         </div>

@@ -149,7 +149,7 @@ export const AppointmentForm = ({
       >
         <DialogHeader>
           <DialogTitle size="modal">Agende um atendimento</DialogTitle>
-          <DialogDescription size="modal">
+          <DialogDescription size="modal" className="text-content-primary">
             Preencha os dados do cliente para realizar o agendamento:
           </DialogDescription>
         </DialogHeader>
@@ -282,10 +282,12 @@ export const AppointmentForm = ({
                               {field.value ? (
                                 format(field.value, 'dd/MM/yyyy')
                               ) : (
-                                <span>Selecione uma data</span>
+                                <span className="text-content-primary">
+                                  Selecione uma data
+                                </span>
                               )}
                             </div>
-                            <ChevronDownIcon className="opacity-50 h-4 w-4" />
+                            <ChevronDownIcon className="opacity-50 h-4 w-4 text-content-primary" />
                           </Button>
                         </FormControl>
                       </PopoverTrigger>
@@ -340,7 +342,7 @@ export const AppointmentForm = ({
             <div className="flex justify-end">
               <Button
                 type="submit"
-                variant="brand"
+                variant="default"
                 disabled={form.formState.isSubmitting}
               >
                 {form.formState.isSubmitting && (

@@ -10,19 +10,19 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground shadow-xs hover:bg-primary/90',
+          'text-content-primary bg-transparent hover:opacity-60 font-bold',
         brand:
-          'bg-background-brand font-bold text-label-large text-[#050505] hover:bg-background-highlights rounded-lg',
+          'bg-background-highlights font-bold text-label-large text-[#050505] hover:opacity-60 rounded-lg',
         outline:
           'border border-border-primary bg-background-tertiary text-content-primary hover:bg-background-secondary hover:border-border-secondary transition-colors',
         destructive:
           'bg-red-600 text-white hover:bg-red-700 transition-colors font-medium',
         ghost:
-          'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
+          'hover:bg-background-brand hover:text-accent-foreground dark:hover:bg-accent/50 text-content-primary',
         link: 'text-primary underline-offset-4 hover:underline',
         remove:
-          'inline-flex items-center gap-2 rounded-md border border-red-500/50 px-3 py-1 text-sm text-red-500 transition-all hover:bg-red-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
-        edit: 'inline-flex items-center gap-2 rounded-md border border-blue-500/50 px-3 py-1 text-sm text-blue-500 transition-all hover:bg-blue-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+          'inline-flex items-center gap-2 border-none px-3 py-1 text-sm text-red-500 transition-all hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+        edit: 'inline-flex items-center gap-2 border-none px-3 py-1 text-sm text-blue-500 transition-all hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
       },
       size: {
         default: 'h-12 px-4 py-3 has-[>svg]:px-3',

@@ -67,24 +67,24 @@ export const DatePicker = () => {
         tooltipText="Dia anterior"
         onClick={() => handleNavigateDay(-1)}
       >
-        <ChevronLeft className="h-4 w-4" />
+        <ChevronLeft className="h-4 w-4 text-content-primary" />
       </NavigationButton>
 
       <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
         <PopoverTrigger asChild>
           <Button
             variant="outline"
-            className="w-min[180px] justify-between text-left font-normal bg-transparent border-border-primary text-content-primary hover:bg-background-tertiary hover:border-border-secondary hover:text-content-primary focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:ring-border-brand focus:border-border-brand focus-visible:border-border-brand"
+            className="w-min[180px] justify-between text-left font-normal border-border-primary text-content-primary hover:bg-background-tertiary hover:border-border-secondary hover:text-content-primary focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:ring-border-brand focus:border-border-brand focus-visible:border-border-brand"
           >
             <div className="flex items-center gap-2">
               <CalendarIcon className="h-4 w-4 text-content-brand" />
               {date ? (
                 format(date, 'dd/MM/yyyy')
               ) : (
-                <span>Selecione uma data</span>
+                <span className="text-content-primary">Selecione uma data</span>
               )}
             </div>
-            <ChevronDown className="h-4 w-4 opacity-50" />
+            <ChevronDown className="h-4 w-4 opacity-50 text-content-primary" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0">
@@ -102,7 +102,7 @@ export const DatePicker = () => {
         tooltipText="Próximo dia"
         onClick={() => handleNavigateDay(1)}
       >
-        <ChevronRight className="h-4 w-4" />
+        <ChevronRight className="h-4 w-4 text-content-primary" />
       </NavigationButton>
     </div>
   );

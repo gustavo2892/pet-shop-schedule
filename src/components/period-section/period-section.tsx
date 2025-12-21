@@ -7,9 +7,9 @@ type PeriodSectionProps = {
 };
 
 const periodIcons = {
-  morning: <Sun className="text-accent-blue" />,
+  morning: <Sun className="text-accent-yellow" />,
   afternoon: <Cloudy className="text-accent-orange" />,
-  evening: <Moon className="text-accent-yellow" />,
+  evening: <Moon className="text-accent-blue" />,
 };
 
 export const PeriodSection = ({ period }: PeriodSectionProps) => {
@@ -22,7 +22,7 @@ export const PeriodSection = ({ period }: PeriodSectionProps) => {
             {period?.title}
           </h2>
         </div>
-        <span className="text-label-large-size text-content-secondary">
+        <span className="text-label-large-size text-content-primary">
           {period.timeRange}
         </span>
       </div>
@@ -40,7 +40,7 @@ export const PeriodSection = ({ period }: PeriodSectionProps) => {
           </div>
         </div>
       ) : (
-        <p className="text-paragraph-small-size text-content-secondary p-5">
+        <p className="text-paragraph-small-size text-content-primary p-5">
           Nenhum agendamento para este período
         </p>
       )}

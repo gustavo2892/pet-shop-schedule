@@ -67,17 +67,17 @@ export const AppointmentCard = ({
           <span className=" text-label-small-size text-content-primary font-semibold">
             {appointment.petName}
           </span>
-          <span className="text-paragraph-small-size text-content-secondary">
+          <span className="text-paragraph-small-size text-content-brand font-semibold">
             /
           </span>
-          <span className="text-paragraph-small-size text-content-secondary">
+          <span className="text-paragraph-small-size text-content-brand font-semibold">
             {appointment.tutorName}
           </span>
         </div>
       </div>
 
       <div className="text-left pr-4 hidden md:block mt-1 md:mt-0 col-span-2 md:col-span-1">
-        <span className="text-paragraph-small-size text-content-secondary">
+        <span className="text-paragraph-small-size text-content-primary">
           {appointment.description}
         </span>
       </div>

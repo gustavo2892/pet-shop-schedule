@@ -3,26 +3,26 @@
 @theme {
   /* Content Colors */
   --color-content-primary: #ffffff;
-  --color-content-secondary: #98959d;
-  --color-content-tertiary: #666666;
-  --color-content-brand: #9282fa;
+  --color-content-secondary: #f9f7f5;
+  --color-content-tertiary: #4b423f;
+  --color-content-brand: #b27941;
 
   /* Background Colors */
-  --color-background-primary: #151515;
-  --color-background-secondary: #1e1e1e;
-  --color-background-tertiary: #23242c;
-  --color-background-brand: #9282fa;
-  --color-background-highlights: #bdb4fa;
+  --color-background-primary: #a48468;
+  --color-background-secondary: #a48468;
+  --color-background-tertiary: #c4ad92;
+  --color-background-brand: #b27941;
+  --color-background-highlights: #c4ad92;
 
   /* Border Colors */
-  --color-border-primary: #3e3c41;
-  --color-border-secondary: #86818c;
-  --color-border-brand: #9282fa;
+  --color-border-primary: #a48468;
+  --color-border-secondary: #b27941;
+  --color-border-brand: #c4ad92;
   --color-border-divisor: #353339;
 
   /* Accent Colors */
-  --color-accent-primary: #4f35e1;
-  --color-accent-primary-light: #7262fa;
+  --color-accent-primary: #b27941;
+  --color-accent-primary-light: #c4ad92;
   --color-accent-blue: #027df0;
   --color-accent-blue-light: #16487a;
   --color-accent-yellow: #f0dc02;
@@ -171,7 +171,7 @@
 
   /* Color Utilities */
   .text-content-primary {
-    color: var(--color-content-primary);
+    color: var(--color-content-tertiary);
   }
   .text-content-secondary {
     color: var(--color-content-secondary);
