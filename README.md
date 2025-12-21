@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">
+  Pet Shop Schedule / Mundo Pet
+  <div>
+    <img src="https://img.shields.io/badge/-ReactJS-blue" />
+    <img src="https://img.shields.io/badge/-NextJS-blueviolet" />
+    <img src="https://img.shields.io/badge/-TailwindCSS-brightgreen" />
+  </div>
+</h1>
 
-## Getting Started
+> Freitas Software.
 
-First, run the development server:
+## Descrição
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Este projeto é uma aplicação web desenvolvida com Next.js, criada com o objetivo de demonstrar, na prática, o uso dos principais recursos modernos do framework — do desenvolvimento ao deploy.
+
+A aplicação consiste em um sistema de agendamentos para um Pet Shop, permitindo criar, editar e remover agendamentos de forma eficiente, utilizando as melhores práticas do ecossistema React e Next.js.
+
+## Features:
+
+- Criação, edição e exclusão de agendamentos
+- Uso de Server Actions para operações no servidor
+- Combinação inteligente de React Server Components e Client Components
+- Validação de formulários com React Hook Form e Zod
+- Revalidação de cache no servidor com revalidatePath, garantindo dados sempre atualizados
+- Estrutura pensada para escalabilidade e boas práticas de organização de código
+
+## Principais Objetivos
+
+O objetivo principal deste projeto é aprender e aplicar conceitos avançados do Next.js, simulando um cenário real de mercado, desde a modelagem das funcionalidades até a entrega final em produção.
+
+## ▶️ Como Rodar o Projeto
+
+### 1) Instalar dependências
+
+```
+pnpm install
+
+```
+### 2) Iniciar prisma com o datasource provider postgresql
+
+```
+npx prisma init --datasource-provider postgresql
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3) Rodar generate do prisma
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npx prisma generate
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+### 4) Rodar aplicação
 
-To learn more about Next.js, take a look at the following resources:
+```
+pnpm dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
